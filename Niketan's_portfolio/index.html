@@ -18,65 +18,79 @@
   <body class="bg-white text-gray-800 pt-20">
     <!-- Header -->
     <header
-      class="fixed top-0 left-0 w-full z-50 bg-white flex items-center justify-between px-6 py-4 shadow-md"
+  class="fixed top-0 left-0 w-full z-50 bg-white flex items-center justify-between px-6 py-4 shadow-md"
+>
+  <!-- Logo -->
+  <div class="w-32">
+    <img
+      src="./TTB_logo.png"
+      alt="Logo"
+      class="w-full h-auto object-contain"
+    />
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="hidden md:flex space-x-6 text-sm font-medium items-center">
+    <a href="#about" class="hover:text-blue-700">About</a>
+    <a href="#work" class="hover:text-blue-700">Work</a>
+    <a href="#testimonials" class="hover:text-blue-700">Testimonials</a>
+    <a href="#contact" class="hover:text-blue-700">Contact</a>
+    <a href="#" class="bg-gray-900 text-white py-2 px-4 rounded-md">
+      Download CV
+    </a>
+  </nav>
+
+  <!-- Hamburger / Close Icon -->
+  <button id="menu-btn" class="md:hidden focus:outline-none">
+    <!-- Menu Icon (☰) -->
+    <svg
+      id="menu-icon"
+      class="w-6 h-6 text-gray-800"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <div class="w-32">
-        <img
-          src="./TTB_logo.png"
-          alt="Logo"
-          class="w-full h-auto object-contain"
-        />
-      </div>
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+    </svg>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex space-x-6 text-sm font-medium items-center">
-        <a href="#about" class="hover:text-blue-700">About</a>
-        <a href="#work" class="hover:text-blue-700">Work</a>
-        <a href="#testimonials" class="hover:text-blue-700">Testimonials</a>
-        <a href="#contact" class="hover:text-blue-700">Contact</a>
-        <a href="#" class="bg-gray-900 text-white py-2 px-4 rounded-md">
-          Download CV
-        </a>
-      </nav>
-
-      <!-- Hamburger Button -->
-      <button id="menu-btn" class="md:hidden focus:outline-none">
-        <svg
-          class="w-6 h-6 text-gray-800"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div
-      id="mobile-menu"
-      class="md:hidden hidden px-6 pt-4 pb-4 bg-white shadow-md"
+    <!-- Close Icon (✕) -->
+    <svg
+      id="close-icon"
+      class="w-6 h-6 text-gray-800 hidden"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <a href="#" class="block py-2 text-gray-700 hover:text-blue-700">About</a>
-      <a href="#" class="block py-2 text-gray-700 hover:text-blue-700">Work</a>
-      <a href="#" class="block py-2 text-gray-700 hover:text-blue-700"
-        >Testimonials</a
-      >
-      <a href="#" class="block py-2 text-gray-700 hover:text-blue-700"
-        >Contact</a
-      >
-      <a
-        href="#"
-        class="inline-block mt-2 bg-gray-900 text-white py-2 px-4 rounded-md"
-      >
-        Download CV
-      </a>
-    </div>
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  </button>
+</header>
+
+<!-- Mobile Menu -->
+<div
+  id="mobile-menu"
+  class="fixed top-20 right-0 bg-white z-50 p-6 md:hidden hidden"
+>
+  <a href="#about" class="block py-2 text-gray-700 hover:text-blue-700">About</a>
+  <a href="#work" class="block py-2 text-gray-700 hover:text-blue-700">Work</a>
+  <a href="#testimonials" class="block py-2 text-gray-700 hover:text-blue-700">Testimonials</a>
+  <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-700">Contact</a>
+  <a href="#" class="inline-block mt-2 bg-gray-900 text-white py-2 px-4 rounded-md">
+    Download CV
+  </a>
+</div>
 
     <!-- Hero Section -->
     <section
@@ -142,7 +156,10 @@
 
     <!-- about section -->
 
-    <section class="px-6 md:px-20 py-16 bg-[rgb(246,250,255)] text-gray-800" id="about">
+    <section
+      class="px-6 md:px-20 py-16 bg-[rgb(246,250,255)] text-gray-800"
+      id="about"
+    >
       <!-- Section Tagline -->
       <div class="flex justify-center mb-8">
         <div
@@ -221,10 +238,10 @@
             Front-End Technologies
           </h3>
           <div
-            class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-items-center"
+            class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 gap-6 justify-items-center"
           >
             <div class="text-center">
-              <img src="./Vector.png" alt="HTML5" class="h-8 mx-auto mb-1" />
+              <img src="./html.png" alt="HTML5" class="h-8 mx-auto mb-1" />
               <p class="text-sm">HTML5</p>
             </div>
             <div class="text-center">
@@ -326,7 +343,7 @@
             Back-End Technologies
           </h3>
           <div
-            class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-items-center"
+            class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 gap-6 justify-items-center"
           >
             <div class="text-center">
               <img
@@ -403,7 +420,7 @@
             Database Technologies
           </h3>
           <div
-            class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-items-center"
+            class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 gap-6 justify-items-center"
           >
             <div class="text-center">
               <img
@@ -440,7 +457,7 @@
             AI Technologies
           </h3>
           <div
-            class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-items-center"
+            class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 gap-6 justify-items-center"
           >
             <div class="text-center">
               <img
@@ -490,7 +507,7 @@
     <!-- experience section -->
 
     <section class="bg-gray-50 py-12 px-6 md:px-16">
-      <div class="max-w-4xl mx-auto text-center">
+      <div class="max-w-6xl mx-auto text-center">
         <div
           class="inline-block bg-gray-200 text-gray-800 text-lg font-medium px-6 py-2 rounded-full mb-6"
         >
@@ -583,23 +600,25 @@
     </section>
 
     <!-- Work section -->
-   <section class="bg-gray-50 py-12 px-6 md:px-16" id="work">
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-10">
+    <section class="bg-gray-50 py-12 px-6 md:px-16" id="work">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center">
+
           <div
-            class="inline-block bg-gray-200 text-gray-800 text-lg font-medium px-6 py-2 rounded-full mb-6"
+            class=" inline-block bg-gray-200 text-gray-800 text-lg font-medium px-6 py-2 rounded-full mb-6"
           >
             Works
           </div>
-          <p class="text-gray-600">
+          <p class=" text-gray-600">
             Some of the noteworthy projects I have built:
           </p>
         </div>
         <!-- struck-ai Project -->
-        <section id="struck-ai" class="project-section py-16 px-4 md:px-8">
+        <section id="struck-ai" class="project-section py-9 px-4 md:px-8">
           <div class="max-w-6xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8 items-start">
-              
+            <div
+              class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8 items-start"
+            >
               <!-- Project Image -->
               <div class="md:w-1/2 w-full">
                 <img
@@ -611,84 +630,197 @@
                   STRUCK-AI
                 </p>
               </div>
-        
+
               <!-- Project Details -->
-              <div class="md:w-1/2 w-full text-left flex flex-col justify-between">
+              <div
+                class="md:w-1/2 w-full text-left flex flex-col justify-between"
+              >
                 <div>
                   <h3 class="text-3xl font-bold mb-4 text-gray-800">
                     STRUCK – AI-Powered Compliance & Automation
                   </h3>
                   <p class="text-gray-700 mb-6 leading-relaxed">
-                    STRUCK is an AI-assisted compliance platform designed to de-risk projects, reduce time-to-construction by at least 15%, and optimize project budgets by 5-15%. It streamlines the compliance process through two key solutions:
+                    STRUCK is an AI-assisted compliance platform designed to
+                    de-risk projects, reduce time-to-construction by at least
+                    15%, and optimize project budgets by 5-15%. It streamlines
+                    the compliance process through two key solutions:
                   </p>
-        
+
                   <div class="mb-6">
-                    <h4 class="font-semibold text-xl mb-3 text-gray-800">Key Solutions:</h4>
+                    <h4 class="font-semibold text-xl mb-3 text-gray-800">
+                      Key Solutions:
+                    </h4>
                     <ul class="list-disc pl-5 text-gray-700 space-y-2">
                       <li>
-                        <strong class="text-gray-800">AI-Powered Regulations Library:</strong> A comprehensive, intelligent database for regulatory compliance.
+                        <strong class="text-gray-800"
+                          >AI-Powered Regulations Library:</strong
+                        >
+                        A comprehensive, intelligent database for regulatory
+                        compliance.
                       </li>
                       <li>
-                        <strong class="text-gray-800">Automated Zoning & Design Checks:</strong> Ensuring projects align with zoning laws and design standards seamlessly.
+                        <strong class="text-gray-800"
+                          >Automated Zoning & Design Checks:</strong
+                        >
+                        Ensuring projects align with zoning laws and design
+                        standards seamlessly.
                       </li>
                     </ul>
                   </div>
-        
+
                   <div class="mb-6">
-                    <h4 class="font-semibold text-xl mb-3 text-gray-800">My Contributions:</h4>
+                    <h4 class="font-semibold text-xl mb-3 text-gray-800">
+                      My Contributions:
+                    </h4>
                     <ul class="list-disc pl-5 text-gray-700 space-y-2">
                       <li>
-                        <strong>Unravel (Next.js):</strong> Developed a Next.js application serving as the frontend for the AI co-pilot, integrating both server-side and client-side rendering. Designed and implemented REST APIs to support various functionalities efficiently.
+                        <strong>Unravel (Next.js):</strong> Developed a Next.js
+                        application serving as the frontend for the AI co-pilot,
+                        integrating both server-side and client-side rendering.
+                        Designed and implemented REST APIs to support various
+                        functionalities efficiently.
                       </li>
                       <li>
-                        <strong>3DBuildings (Python, Functions Framework):</strong> Built a Python-based service that fetches building coordinates and structures, converting them into DXF AutoCAD format using ezdxf, automating design workflows and reducing manual intervention.
+                        <strong
+                          >3DBuildings (Python, Functions Framework):</strong
+                        >
+                        Built a Python-based service that fetches building
+                        coordinates and structures, converting them into DXF
+                        AutoCAD format using ezdxf, automating design workflows
+                        and reducing manual intervention.
                       </li>
                       <li>
-                        <strong>Python Backend (FastAPI, AI Integration):</strong> Engineered a FastAPI backend to interact with ChatGPT’s API, delivering real-time AI-powered responses. Integrated Retrieval Augmented Generation (RAG) for improved data retrieval, DXF file processing, and document filtering capabilities.
+                        <strong
+                          >Python Backend (FastAPI, AI Integration):</strong
+                        >
+                        Engineered a FastAPI backend to interact with ChatGPT’s
+                        API, delivering real-time AI-powered responses.
+                        Integrated Retrieval Augmented Generation (RAG) for
+                        improved data retrieval, DXF file processing, and
+                        document filtering capabilities.
                       </li>
                       <li>
-                        <strong>Landing Page (Next.js):</strong> Developed an SEO-optimized landing page with server-side rendering (SSR) for better visibility. Designed an intuitive interface for users to directly retrieve DXF files and interact with AI-driven document analysis.
+                        <strong>Landing Page (Next.js):</strong> Developed an
+                        SEO-optimized landing page with server-side rendering
+                        (SSR) for better visibility. Designed an intuitive
+                        interface for users to directly retrieve DXF files and
+                        interact with AI-driven document analysis.
                       </li>
                     </ul>
                     <p class="mt-4 text-gray-700">
-                      This project focused on enhancing efficiency, integrating AI, and building scalable, high-performance solutions. If you're looking for a developer who delivers robust and intelligent applications, let’s connect.
+                      This project focused on enhancing efficiency, integrating
+                      AI, and building scalable, high-performance solutions. If
+                      you're looking for a developer who delivers robust and
+                      intelligent applications, let’s connect.
                     </p>
                   </div>
                 </div>
-        
+
                 <!-- Tech Stack -->
                 <div class="mb-8">
-                  <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
+                  <h4 class="font-semibold text-lg mb-3 text-gray-800">
+                    Tech Stack:
+                  </h4>
                   <div class="flex flex-wrap gap-3">
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">React</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Next.js</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Typescript</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Python</span>
-                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">FastAPI</span>
-                    <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">TailwindCSS</span>
-                    <span class="tech-tag bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded-full">Shadcn</span>
-                    <span class="tech-tag bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full">MongoDBSentry</span>
-                    <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">Aggregation</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">LangChain</span>
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Kubernetes</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Sentry</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">ArcGIS</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">3D BAG</span>
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >React</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >Next.js</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >Typescript</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >Python</span
+                    >
+                    <span
+                      class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+                      >FastAPI</span
+                    >
+                    <span
+                      class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full"
+                      >TailwindCSS</span
+                    >
+                    <span
+                      class="tech-tag bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded-full"
+                      >Shadcn</span
+                    >
+                    <span
+                      class="tech-tag bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full"
+                      >MongoDBSentry</span
+                    >
+                    <span
+                      class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full"
+                      >Aggregation</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >LangChain</span
+                    >
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >Kubernetes</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >Sentry</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >ArcGIS</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >3D BAG</span
+                    >
                   </div>
                 </div>
-        
+
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
-                  <a href="https://unravel.struck.build/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a
+                    href="https://unravel.struck.build/"
+                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  >
                     <span>Live Demo</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </a>
-                  <a href="https://www.struck.build/en" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a
+                    href="https://www.struck.build/en"
+                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  >
                     <span>Company Site</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </a>
                 </div>
@@ -696,87 +828,207 @@
             </div>
           </div>
         </section>
-        
-      
+
         <!-- Walacor Project -->
-        <section id="walacor" class="project-section py-16 px-4 md:px-8 bg-gray-50">
+        <section
+          id="walacor"
+          class="project-section py-16 px-4 md:px-8 bg-gray-50"
+        >
           <div class="max-w-6xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row-reverse gap-8 items-start">
+            <div
+              class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row-reverse gap-8 items-start"
+            >
               <!-- Project Image -->
               <div class="md:w-1/2 w-full">
                 <img
                   src="./walacor.png"
                   alt="Walacor project screenshot"
-                  class="rounded-xl w-full "
+                  class="rounded-xl w-full"
                 />
                 <p class="mt-4 text-center font-semibold text-xl text-gray-600">
                   Walacor
                 </p>
               </div>
-    
+
               <!-- Project Details -->
               <div class="md:w-1/2 w-full text-left">
                 <h3 class="text-3xl font-bold mb-4 text-gray-800">
                   Walacor - Blockchain Security Platform
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  Walacor is a cutting-edge platform that leverages blockchain technology to unify best-in-class technologies within an enterprise-grade distributed microservices architecture. It ensures that data remains secure and accessible only to authorized entities, utilizing quantum-resistant encryption algorithms for unmatched security.
+                  Walacor is a cutting-edge platform that leverages blockchain
+                  technology to unify best-in-class technologies within an
+                  enterprise-grade distributed microservices architecture. It
+                  ensures that data remains secure and accessible only to
+                  authorized entities, utilizing quantum-resistant encryption
+                  algorithms for unmatched security.
                 </p>
-                
+
                 <div class="mb-6">
-                  <h4 class="font-semibold text-xl mb-3 text-gray-800">Core Features and Services:</h4>
+                  <h4 class="font-semibold text-xl mb-3 text-gray-800">
+                    Core Features and Services:
+                  </h4>
                   <ul class="list-disc list-inside text-gray-700 space-y-2">
-                    <li class=" text-start">
-                      <strong class="text-gray-800">Platform API:</strong> The central access point for all interactions with Walacor. This RESTful API communicates using a proprietary JSON format called an Envelope, ensuring seamless data exchange across the ecosystem.
+                    <li class="text-start">
+                      <strong class="text-gray-800">Platform API:</strong> The
+                      central access point for all interactions with Walacor.
+                      This RESTful API communicates using a proprietary JSON
+                      format called an Envelope, ensuring seamless data exchange
+                      across the ecosystem.
                     </li>
-                    <li class=" items-start">
-                      <span><strong class="text-gray-800">Off-Chain Manager(OCM):</strong> A key component that records every Envelope on the blockchain, guaranteeing an immutable and verifiable data store for enhanced security and transparency.</span>
+                    <li class="items-start">
+                      <span
+                        ><strong class="text-gray-800"
+                          >Off-Chain Manager(OCM):</strong
+                        >
+                        A key component that records every Envelope on the
+                        blockchain, guaranteeing an immutable and verifiable
+                        data store for enhanced security and transparency.</span
+                      >
                     </li>
-                    <li class=" items-start">
-                      <span><strong class="text-gray-800">Data Storage Manager:</strong> Serves as the bridge between blockchain and cache, enabling efficient data retrieval while maintaining security and compliance standards.</span>
+                    <li class="items-start">
+                      <span
+                        ><strong class="text-gray-800"
+                          >Data Storage Manager:</strong
+                        >
+                        Serves as the bridge between blockchain and cache,
+                        enabling efficient data retrieval while maintaining
+                        security and compliance standards.</span
+                      >
                     </li>
-                    <li class=" items-start">
-                      <span><strong class="text-gray-800">Business Process Manager(BPM):</strong> Automates workflows by triggering predefined business logic whenever new Envelopes are added to the system, streamlining operations and ensuring seamless process execution.</span>
+                    <li class="items-start">
+                      <span
+                        ><strong class="text-gray-800"
+                          >Business Process Manager(BPM):</strong
+                        >
+                        Automates workflows by triggering predefined business
+                        logic whenever new Envelopes are added to the system,
+                        streamlining operations and ensuring seamless process
+                        execution.</span
+                      >
                     </li>
                   </ul>
-                  <p class="mt-2">Walacor's blockchain-powered infrastructure, quantum-resistant encryption, and automated business logic make it a game-changer for enterprises seeking unparalleled data security and efficiency.</p>
+                  <p class="mt-2">
+                    Walacor's blockchain-powered infrastructure,
+                    quantum-resistant encryption, and automated business logic
+                    make it a game-changer for enterprises seeking unparalleled
+                    data security and efficiency.
+                  </p>
                 </div>
-              
+
                 <!-- Tech Stack -->
                 <div class="mb-8">
-                  <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
+                  <h4 class="font-semibold text-lg mb-3 text-gray-800">
+                    Tech Stack:
+                  </h4>
                   <div class="flex flex-wrap gap-3">
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">TypeScript</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">React.js</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Node.js</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Multichain</span>
-                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">Express.js</span>
-                    <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">MongoDB</span>
-                    <span class="tech-tag bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded-full">AWS AMI</span>
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Python3</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Flask</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">KMIP</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">DevExtreme</span>
-                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">Scss</span>
-                    <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">Protocol</span>
-                    <span class="tech-tag bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded-full">Cryptography Key LifeCycle</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Docker</span>
-                    <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">Private npm packages</span>
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >TypeScript</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >React.js</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >Node.js</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >Multichain</span
+                    >
+                    <span
+                      class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+                      >Express.js</span
+                    >
+                    <span
+                      class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full"
+                      >MongoDB</span
+                    >
+                    <span
+                      class="tech-tag bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded-full"
+                      >AWS AMI</span
+                    >
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >Python3</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >Flask</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >KMIP</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >DevExtreme</span
+                    >
+                    <span
+                      class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+                      >Scss</span
+                    >
+                    <span
+                      class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full"
+                      >Protocol</span
+                    >
+                    <span
+                      class="tech-tag bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded-full"
+                      >Cryptography Key LifeCycle</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >Docker</span
+                    >
+                    <span
+                      class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full"
+                      >Private npm packages</span
+                    >
                   </div>
                 </div>
-              
+
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
-                  <a href="https://aws.amazon.com/marketplace/pp/prodview-n6yuvr2g44wpo?sr=0-1&ref_=beagle&applicationId=AWSMPContessa" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a
+                    href="https://aws.amazon.com/marketplace/pp/prodview-n6yuvr2g44wpo?sr=0-1&ref_=beagle&applicationId=AWSMPContessa"
+                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  >
                     <span>AWS Marketplace</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </a>
-                  <a href="https://aws.amazon.com/marketplace/pp/prodview-n6yuvr2g44wpo/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a
+                    href="https://aws.amazon.com/marketplace/pp/prodview-n6yuvr2g44wpo/"
+                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  >
                     <span>AWS Marketplace</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </a>
                 </div>
@@ -784,11 +1036,13 @@
             </div>
           </div>
         </section>
-      
+
         <!-- SampleServe Project -->
         <section id="sampleserve" class="project-section py-16 px-4 md:px-8">
           <div class="max-w-6xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8 items-start">
+            <div
+              class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8 items-start"
+            >
               <!-- Project Image -->
               <div class="md:w-1/2 w-full">
                 <img
@@ -800,63 +1054,147 @@
                   SampleServe
                 </p>
               </div>
-          
+
               <!-- Project Details -->
               <div class="md:w-1/2 w-full text-left">
                 <h3 class="text-3xl font-bold mb-4 text-gray-800">
                   SampleServe - Environmental Sampling Platform
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  SampleServe is an advanced environmental sampling and data management platform designed to streamline workflows for environmental professionals. By digitizing the sampling process, it enhances efficiency, accuracy, and compliance, eliminating manual errors and paperwork. With its intuitive mobile and web applications, SampleServe enables real-time data collection, seamless collaboration between field and lab teams, and automated reporting, ensuring faster and more reliable environmental testing.
+                  SampleServe is an advanced environmental sampling and data
+                  management platform designed to streamline workflows for
+                  environmental professionals. By digitizing the sampling
+                  process, it enhances efficiency, accuracy, and compliance,
+                  eliminating manual errors and paperwork. With its intuitive
+                  mobile and web applications, SampleServe enables real-time
+                  data collection, seamless collaboration between field and lab
+                  teams, and automated reporting, ensuring faster and more
+                  reliable environmental testing.
                 </p>
-                
+
                 <div class="mb-6">
-                  <h4 class="font-semibold text-xl mb-3 text-gray-800">Key Features:</h4>
+                  <h4 class="font-semibold text-xl mb-3 text-gray-800">
+                    Key Features:
+                  </h4>
                   <ul class="list-disc list-inside text-gray-700 space-y-2">
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <span><strong class="text-gray-800">Digital Chain-of-Custody:</strong> Secure and transparent sample tracking from collection to analysis.</span>
+                      <span
+                        ><strong class="text-gray-800"
+                          >Digital Chain-of-Custody:</strong
+                        >
+                        Secure and transparent sample tracking from collection
+                        to analysis.</span
+                      >
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <span><strong class="text-gray-800">Automated Report Generation:</strong> Instantly compiles detailed, compliance-ready reports.</span>
+                      <span
+                        ><strong class="text-gray-800"
+                          >Automated Report Generation:</strong
+                        >
+                        Instantly compiles detailed, compliance-ready
+                        reports.</span
+                      >
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <span><strong class="text-gray-800">Real-Time Field Data Collection:</strong> Mobile app integration for accurate on-site data entry.</span>
+                      <span
+                        ><strong class="text-gray-800"
+                          >Real-Time Field Data Collection:</strong
+                        >
+                        Mobile app integration for accurate on-site data
+                        entry.</span
+                      >
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <span><strong class="text-gray-800">Cloud-Based Accessibility:</strong> Enables teams to access and manage data anytime, anywhere.</span>
+                      <span
+                        ><strong class="text-gray-800"
+                          >Cloud-Based Accessibility:</strong
+                        >
+                        Enables teams to access and manage data anytime,
+                        anywhere.</span
+                      >
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <span><strong class="text-gray-800">Regulatory Compliance:</strong> Ensures adherence to environmental standards and protocols.</span>
+                      <span
+                        ><strong class="text-gray-800"
+                          >Regulatory Compliance:</strong
+                        >
+                        Ensures adherence to environmental standards and
+                        protocols.</span
+                      >
                     </li>
                   </ul>
-                  <p class="mt-4">SampleServe has revolutionized environmental sampling by reducing paperwork, minimizing human error, and accelerating project turnaround times. It empowers field teams and laboratories with a modern, efficient, and user-friendly solution, driving greater accuracy and productivity in environmental testing.</p>
+                  <p class="mt-4">
+                    SampleServe has revolutionized environmental sampling by
+                    reducing paperwork, minimizing human error, and accelerating
+                    project turnaround times. It empowers field teams and
+                    laboratories with a modern, efficient, and user-friendly
+                    solution, driving greater accuracy and productivity in
+                    environmental testing.
+                  </p>
                 </div>
-          
+
                 <!-- Tech Stack -->
                 <div class="mb-8">
-                  <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
+                  <h4 class="font-semibold text-lg mb-3 text-gray-800">
+                    Tech Stack:
+                  </h4>
                   <div class="flex flex-wrap gap-3">
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">HTML</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">CSS</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Typescript</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Redux</span>
-                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">Auth0</span>
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">React</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">React-native</span>
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >HTML</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >CSS</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >Typescript</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >Redux</span
+                    >
+                    <span
+                      class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+                      >Auth0</span
+                    >
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >React</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >React-native</span
+                    >
                   </div>
                 </div>
-          
+
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
-                  <a href="https://www.sampleserve.com/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a
+                    href="https://www.sampleserve.com/"
+                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  >
                     <span>Official Website</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </a>
                 </div>
@@ -864,11 +1202,16 @@
             </div>
           </div>
         </section>
-      
+
         <!-- Convo.ai Project -->
-        <section id="convoai" class="project-section py-16 px-4 md:px-8 bg-gray-50">
+        <section
+          id="convoai"
+          class="project-section py-16 px-4 md:px-8 bg-gray-50"
+        >
           <div class="max-w-6xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row-reverse gap-8 items-start">
+            <div
+              class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row-reverse gap-8 items-start"
+            >
               <!-- Project Image -->
               <div class="md:w-1/2 w-full">
                 <img
@@ -880,64 +1223,148 @@
                   Convo.ai
                 </p>
               </div>
-        
+
               <!-- Project Details -->
               <div class="md:w-1/2 w-full text-left">
                 <h3 class="text-3xl font-bold mb-4 text-gray-800">
                   Convo.ai - AI Conversation Platform
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  Convo.ai is an advanced AI-driven conversational platform designed to transform customer interactions through intelligent automation. Built on the MERN stack (MongoDB, Express.js, React, Node.js), it seamlessly integrates with business tools, delivering personalized, real-time communication that enhances engagement and streamlines customer support.
-                  <br> Leveraging cutting-edge Natural Language Processing (NLP), Convo.ai understands and responds to user queries with accuracy, ensuring a smooth and efficient customer experience.
+                  Convo.ai is an advanced AI-driven conversational platform
+                  designed to transform customer interactions through
+                  intelligent automation. Built on the MERN stack (MongoDB,
+                  Express.js, React, Node.js), it seamlessly integrates with
+                  business tools, delivering personalized, real-time
+                  communication that enhances engagement and streamlines
+                  customer support.
+                  <br />
+                  Leveraging cutting-edge Natural Language Processing (NLP),
+                  Convo.ai understands and responds to user queries with
+                  accuracy, ensuring a smooth and efficient customer experience.
                 </p>
-                
+
                 <div class="mb-6">
-                  <h4 class="font-semibold text-xl mb-3 text-gray-800">Key Features:</h4>
+                  <h4 class="font-semibold text-xl mb-3 text-gray-800">
+                    Key Features:
+                  </h4>
                   <ul class="list-disc list-inside text-gray-700 space-y-2">
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <span><strong class="text-gray-800">AI-Driven Chatbot:</strong> Automates real-time customer interactions with intelligent responses.</span>
+                      <span
+                        ><strong class="text-gray-800"
+                          >AI-Driven Chatbot:</strong
+                        >
+                        Automates real-time customer interactions with
+                        intelligent responses.</span
+                      >
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <span><strong class="text-gray-800">Scalable Backend Architecture:</strong> Powered by Node.js and Express for high-performance request handling.</span>
+                      <span
+                        ><strong class="text-gray-800"
+                          >Scalable Backend Architecture:</strong
+                        >
+                        Powered by Node.js and Express for high-performance
+                        request handling.</span
+                      >
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <span><strong class="text-gray-800">Dynamic Frontend:</strong> Built with React for a seamless, intuitive user experience.</span>
+                      <span
+                        ><strong class="text-gray-800"
+                          >Dynamic Frontend:</strong
+                        >
+                        Built with React for a seamless, intuitive user
+                        experience.</span
+                      >
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <span><strong class="text-gray-800">Efficient Data Management:</strong> Utilizes MongoDB for fast and reliable data storage and retrieval.</span>
+                      <span
+                        ><strong class="text-gray-800"
+                          >Efficient Data Management:</strong
+                        >
+                        Utilizes MongoDB for fast and reliable data storage and
+                        retrieval.</span
+                      >
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <span><strong class="text-gray-800">Seamless Integrations:</strong> Easily connects with third-party APIs, CRM systems, and business tools for enhanced functionality.</span>
+                      <span
+                        ><strong class="text-gray-800"
+                          >Seamless Integrations:</strong
+                        >
+                        Easily connects with third-party APIs, CRM systems, and
+                        business tools for enhanced functionality.</span
+                      >
                     </li>
                   </ul>
-                  <p class="mt-4">Convo.ai empowers businesses to enhance customer engagement, streamline support processes, and drive operational efficiency. By combining AI, automation, and a user-friendly interface, it delivers a smarter, faster, and more efficient way to manage conversations at scale.</p>
+                  <p class="mt-4">
+                    Convo.ai empowers businesses to enhance customer engagement,
+                    streamline support processes, and drive operational
+                    efficiency. By combining AI, automation, and a user-friendly
+                    interface, it delivers a smarter, faster, and more efficient
+                    way to manage conversations at scale.
+                  </p>
                 </div>
-        
+
                 <!-- Tech Stack -->
                 <div class="mb-8">
-                  <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
+                  <h4 class="font-semibold text-lg mb-3 text-gray-800">
+                    Tech Stack:
+                  </h4>
                   <div class="flex flex-wrap gap-3">
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Python</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">NextJS</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">React</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Typescript</span>
-                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">MongoDB</span>
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Tailwind Css</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Prompt</span>
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >Python</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >NextJS</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >React</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >Typescript</span
+                    >
+                    <span
+                      class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+                      >MongoDB</span
+                    >
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >Tailwind Css</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >Prompt</span
+                    >
                   </div>
                 </div>
-        
+
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
-                  <a href="https://getconvo.ai/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a
+                    href="https://getconvo.ai/"
+                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  >
                     <span>Official Website</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </a>
                 </div>
@@ -945,54 +1372,104 @@
             </div>
           </div>
         </section>
-      
+
         <!-- Chapterly Project -->
         <section id="chapterly" class="project-section py-16 px-4 md:px-8">
           <div class="max-w-6xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8 items-start">
+            <div
+              class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8 items-start"
+            >
               <!-- Project Image -->
               <div class="md:w-1/2 w-full">
                 <img
                   src="./chapterly.png"
                   alt="Chapterly project screenshot"
-                  class="rounded-xl w-full "
+                  class="rounded-xl w-full"
                 />
                 <p class="mt-4 text-center font-semibold text-xl text-gray-600">
                   Chapterly
                 </p>
               </div>
-      
+
               <!-- Project Details -->
               <div class="md:w-1/2 w-full text-left">
                 <h3 class="text-3xl font-bold mb-4 text-gray-800">
                   Chapterly - Authoring Platform
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  Chapterly is an authoring app. It aims to connect readers with storytellers from across the globe. Chapterly's authoring tools matched with a growing global audience of readers unlocks author-friendly publishing opportunities storytellers deserve. Including spelling and grammar checker, distraction-free mode, goals and more.
+                  Chapterly is an authoring app. It aims to connect readers
+                  with storytellers from across the globe. Chapterly's authoring
+                  tools matched with a growing global audience of readers
+                  unlocks author-friendly publishing opportunities storytellers
+                  deserve. Including spelling and grammar checker,
+                  distraction-free mode, goals and more.
                 </p>
-      
+
                 <!-- Tech Stack -->
                 <div class="mb-8">
-                  <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
+                  <h4 class="font-semibold text-lg mb-3 text-gray-800">
+                    Tech Stack:
+                  </h4>
                   <div class="flex flex-wrap gap-3">
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">React.js</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Node.js</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Next.js</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Firebase</span>
-                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">StoryBook</span>
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Typescript</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Styled Components</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Sentry</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Notion</span>
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >React.js</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >Node.js</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >Next.js</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >Firebase</span
+                    >
+                    <span
+                      class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+                      >StoryBook</span
+                    >
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >Typescript</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >Styled Components</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >Sentry</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >Notion</span
+                    >
                   </div>
                 </div>
-      
+
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
-                  <a href="https://www.chapterly.com/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a
+                    href="https://www.chapterly.com/"
+                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  >
                     <span>Related Project</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </a>
                 </div>
@@ -1000,62 +1477,130 @@
             </div>
           </div>
         </section>
-      
+
         <!-- GoMedii Project -->
-        <section id="gomedii" class="project-section py-16 px-4 md:px-8 bg-gray-50">
+        <section
+          id="gomedii"
+          class="project-section py-16 px-4 md:px-8 bg-gray-50"
+        >
           <div class="max-w-6xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row-reverse gap-8 items-start">
+            <div
+              class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row-reverse gap-8 items-start"
+            >
               <!-- Project Image -->
               <div class="md:w-1/2 w-full">
                 <img
                   src="./gomedii.png"
                   alt="GoMedii project screenshot"
-                  class="rounded-xl w-full "
+                  class="rounded-xl w-full"
                 />
                 <p class="mt-4 text-center font-semibold text-xl text-gray-600">
                   GoMedii
                 </p>
               </div>
-      
+
               <!-- Project Details -->
               <div class="md:w-1/2 w-full text-left">
                 <h3 class="text-3xl font-bold mb-4 text-gray-800">
                   GoMedii - Healthcare Platform
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  GoMedii is a healthcare technology platform focused at In-Patient care that helps through the entire treatment journey from hospital/doctor discovery, treatment planning to pre-treatment & in-treatment at hospitals until the post treatment care.
-                  <br><br>
-                  GoMedii platform supports multilingual communication and offers features like online video consultations, pharmacy services, and travel assistance for medical purposes.
+                  GoMedii is a healthcare technology platform focused at
+                  In-Patient care that helps through the entire treatment
+                  journey from hospital/doctor discovery, treatment planning to
+                  pre-treatment & in-treatment at hospitals until the post
+                  treatment care.
+                  <br /><br />
+                  GoMedii platform supports multilingual communication and
+                  offers features like online video consultations, pharmacy
+                  services, and travel assistance for medical purposes.
                 </p>
-      
+
                 <!-- Tech Stack -->
                 <div class="mb-8">
-                  <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
+                  <h4 class="font-semibold text-lg mb-3 text-gray-800">
+                    Tech Stack:
+                  </h4>
                   <div class="flex flex-wrap gap-3">
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">HTML</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">JavaScript</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">TypeScript</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Pyhon</span>
-                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">MaterialUI</span>
-                    <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">SCSS</span>
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">React.js</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">React-Native</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Next.js</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Node.js</span>
-                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">MongoDB</span>
-                    <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">AWS</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Docker</span>
-                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">Twilio</span>
-
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >HTML</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >JavaScript</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >TypeScript</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >Pyhon</span
+                    >
+                    <span
+                      class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+                      >MaterialUI</span
+                    >
+                    <span
+                      class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full"
+                      >SCSS</span
+                    >
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >React.js</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >React-Native</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >Next.js</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >Node.js</span
+                    >
+                    <span
+                      class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+                      >MongoDB</span
+                    >
+                    <span
+                      class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full"
+                      >AWS</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >Docker</span
+                    >
+                    <span
+                      class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+                      >Twilio</span
+                    >
                   </div>
                 </div>
-      
+
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
-                  <a href="https://gomedii.com/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a
+                    href="https://gomedii.com/"
+                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  >
                     <span>Official Website</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </a>
                 </div>
@@ -1063,52 +1608,99 @@
             </div>
           </div>
         </section>
-      
+
         <!-- Dimusco Project -->
         <section id="dimusco" class="project-section py-16 px-4 md:px-8">
           <div class="max-w-6xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8 items-start">
+            <div
+              class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8 items-start"
+            >
               <!-- Project Image -->
               <div class="md:w-1/2 w-full">
                 <img
                   src="./Dimusco.png"
                   alt="Dimusco project screenshot"
-                  class="rounded-xl w-full "
+                  class="rounded-xl w-full"
                 />
                 <p class="mt-4 text-center font-semibold text-xl text-gray-600">
                   Dimusco
                 </p>
               </div>
-      
+
               <!-- Project Details -->
               <div class="md:w-1/2 w-full text-left">
                 <h3 class="text-3xl font-bold mb-4 text-gray-800">
                   Dimusco - Digital Sheet Music
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  Dimusco is a digital sheet music platform designed to provide musicians with a seamless way to access, annotate, and share sheet music across devices. Built with a focus on usability and collaboration, it enables orchestras, ensembles, and individual musicians to manage their music libraries efficiently.The platform integrates real-time synchronization, advanced annotation tools, and cloud-based accessibility, making it a powerful solution for modern digital sheet music management.
+                  Dimusco is a digital sheet music platform designed to provide
+                  musicians with a seamless way to access, annotate, and share
+                  sheet music across devices. Built with a focus on usability
+                  and collaboration, it enables orchestras, ensembles, and
+                  individual musicians to manage their music libraries
+                  efficiently.The platform integrates real-time synchronization,
+                  advanced annotation tools, and cloud-based accessibility,
+                  making it a powerful solution for modern digital sheet music
+                  management.
                 </p>
-      
+
                 <!-- Tech Stack -->
                 <div class="mb-8">
-                  <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
+                  <h4 class="font-semibold text-lg mb-3 text-gray-800">
+                    Tech Stack:
+                  </h4>
                   <div class="flex flex-wrap gap-3">
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">ReactJS</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">JavaScript</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Redux</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">SCSS</span>
-                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">REST API</span>
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">CSS</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Bootstrap</span>
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >ReactJS</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >JavaScript</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >Redux</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >SCSS</span
+                    >
+                    <span
+                      class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+                      >REST API</span
+                    >
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >CSS</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >Bootstrap</span
+                    >
                   </div>
                 </div>
-      
+
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
-                  <a href="https://legacyfantasysports.com/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a
+                    href="https://legacyfantasysports.com/"
+                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  >
                     <span>Related Project</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </a>
                 </div>
@@ -1116,38 +1708,50 @@
             </div>
           </div>
         </section>
-      
+
         <!-- Fantasy Sports Project -->
-        <section id="fantasy-sports" class="project-section py-16 px-4 md:px-8 bg-gray-50">
+        <section
+          id="fantasy-sports"
+          class="project-section py-16 px-4 md:px-8 bg-gray-50"
+        >
           <div class="max-w-6xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row-reverse gap-8 items-start">
+            <div
+              class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row-reverse gap-8 items-start"
+            >
               <!-- Project Image -->
               <div class="md:w-1/2 w-full">
                 <img
                   src="./fantasy sport.png"
                   alt="Fantasy Sports project screenshot"
-                  class="rounded-xl  w-full "
+                  class="rounded-xl w-full"
                 />
                 <p class="mt-4 text-center font-semibold text-xl text-gray-600">
                   Fantasy Sports
                 </p>
               </div>
-      
+
               <!-- Project Details -->
               <div class="md:w-1/2 w-full text-left">
                 <h3 class="text-3xl font-bold mb-4 text-gray-800">
                   Fantasy Sports App
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  A mobile application designed to serve the majority of sports events, allowing users to create lineups for participation. It introduces a new way to play fantasy sports—your one-stop destination to play, draft, manage, and compete in fantasy leagues and contests.
+                  A mobile application designed to serve the majority of sports
+                  events, allowing users to create lineups for participation. It
+                  introduces a new way to play fantasy sports—your one-stop
+                  destination to play, draft, manage, and compete in fantasy
+                  leagues and contests.
                 </p>
-                
+
                 <div class="mb-6">
-                  <h4 class="font-semibold text-xl mb-3 text-gray-800">Project Responsibilities:</h4>
+                  <h4 class="font-semibold text-xl mb-3 text-gray-800">
+                    Project Responsibilities:
+                  </h4>
                   <ul class="list-disc list-inside text-gray-700 space-y-2">
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      Coordinated with the team to integrate features into the mobile app.
+                      Coordinated with the team to integrate features into the
+                      mobile app.
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
@@ -1155,7 +1759,8 @@
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      Tested and debugged the application to ensure optimal performance.
+                      Tested and debugged the application to ensure optimal
+                      performance.
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
@@ -1163,27 +1768,64 @@
                     </li>
                   </ul>
                 </div>
-      
+
                 <!-- Tech Stack -->
                 <div class="mb-8">
-                  <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
+                  <h4 class="font-semibold text-lg mb-3 text-gray-800">
+                    Tech Stack:
+                  </h4>
                   <div class="flex flex-wrap gap-3">
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">React-Native</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">JavaScript</span>
-                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">TypeScript</span>
-                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Python</span>
-                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">AWS</span>
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Android</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Firebase</span>
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >React-Native</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >JavaScript</span
+                    >
+                    <span
+                      class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                      >TypeScript</span
+                    >
+                    <span
+                      class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+                      >Python</span
+                    >
+                    <span
+                      class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+                      >AWS</span
+                    >
+                    <span
+                      class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >Android</span
+                    >
+                    <span
+                      class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                      >Firebase</span
+                    >
                   </div>
                 </div>
-      
+
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
-                  <a href="https://legacyfantasysports.com/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a
+                    href="https://legacyfantasysports.com/"
+                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  >
                     <span>Official Website</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </a>
                 </div>
@@ -1191,8 +1833,8 @@
             </div>
           </div>
         </section>
-  </div>
-</section>
+      </div>
+    </section>
     <!-- Testimonials -->
 
     <section class="bg-white py-16 px-4" id="testimonials">
@@ -1366,10 +2008,24 @@
     <script>
       const menuBtn = document.getElementById("menu-btn");
       const mobileMenu = document.getElementById("mobile-menu");
-
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+    
       menuBtn.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
+    
+      // Optional: Close menu when a link is clicked
+      document.querySelectorAll("#mobile-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
       });
     </script>
+    
   </body>
 </html>
