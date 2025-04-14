@@ -30,10 +30,10 @@
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex space-x-6 text-sm font-medium items-center">
-        <a href="#" class="hover:text-blue-700">About</a>
-        <a href="#" class="hover:text-blue-700">Work</a>
-        <a href="#" class="hover:text-blue-700">Testimonials</a>
-        <a href="#" class="hover:text-blue-700">Contact</a>
+        <a href="#about" class="hover:text-blue-700">About</a>
+        <a href="#work" class="hover:text-blue-700">Work</a>
+        <a href="#testimonials" class="hover:text-blue-700">Testimonials</a>
+        <a href="#contact" class="hover:text-blue-700">Contact</a>
         <a href="#" class="bg-gray-900 text-white py-2 px-4 rounded-md">
           Download CV
         </a>
@@ -142,7 +142,7 @@
 
     <!-- about section -->
 
-    <section class="px-6 md:px-20 py-16 bg-[rgb(246,250,255)] text-gray-800">
+    <section class="px-6 md:px-20 py-16 bg-[rgb(246,250,255)] text-gray-800" id="about">
       <!-- Section Tagline -->
       <div class="flex justify-center mb-8">
         <div
@@ -583,7 +583,7 @@
     </section>
 
     <!-- Work section -->
-   <section class="bg-gray-50 py-12 px-6 md:px-16">
+   <section class="bg-gray-50 py-12 px-6 md:px-16" id="work">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-10">
           <div
@@ -595,70 +595,67 @@
             Some of the noteworthy projects I have built:
           </p>
         </div>
-
-        <section id="struck-ai" class="project-section py-16 px-4 md:px-8 ">
+        <!-- struck-ai Project -->
+        <section id="struck-ai" class="project-section py-16 px-4 md:px-8">
           <div class="max-w-6xl mx-auto">
             <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8 items-start">
+              
               <!-- Project Image -->
               <div class="md:w-1/2 w-full">
                 <img
                   src="./struck-ai.png"
                   alt="STRUCK-AI project screenshot"
-                  class="rounded-xl w-full "
+                  class="rounded-xl w-full"
                 />
                 <p class="mt-4 text-center font-semibold text-xl text-gray-600">
                   STRUCK-AI
                 </p>
               </div>
-      
+        
               <!-- Project Details -->
-              <div class="md:w-1/2 w-full text-left">
-                <h3 class="text-3xl font-bold mb-4 text-gray-800">
-                  STRUCK – AI-Powered Compliance & Automation
-                </h3>
-                <p class="text-gray-700 mb-6 leading-relaxed">
-                  STRUCK is an AI-assisted compliance platform designed to de-risk
-                  projects, reduce time-to-construction by at least 15%, and
-                  optimize project budgets by 5-15%. It streamlines the compliance
-                  process through intelligent automation.
-                </p>
-                
-                <div class="mb-6">
-                  <h4 class="font-semibold text-xl mb-3 text-gray-800">Key Solutions:</h4>
-                  <ul class="list-disc list-inside text-gray-700 space-y-2">
-                    <li class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <strong class="text-gray-800">AI-Powered Regulations Library:</strong> Comprehensive, intelligent database for regulatory compliance
-                    </li>
-                    <li class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Automated Zoning & Design Checks:</strong> Ensuring projects align with zoning laws and design standards
-                    </li>
-                  </ul>
+              <div class="md:w-1/2 w-full text-left flex flex-col justify-between">
+                <div>
+                  <h3 class="text-3xl font-bold mb-4 text-gray-800">
+                    STRUCK – AI-Powered Compliance & Automation
+                  </h3>
+                  <p class="text-gray-700 mb-6 leading-relaxed">
+                    STRUCK is an AI-assisted compliance platform designed to de-risk projects, reduce time-to-construction by at least 15%, and optimize project budgets by 5-15%. It streamlines the compliance process through two key solutions:
+                  </p>
+        
+                  <div class="mb-6">
+                    <h4 class="font-semibold text-xl mb-3 text-gray-800">Key Solutions:</h4>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                      <li>
+                        <strong class="text-gray-800">AI-Powered Regulations Library:</strong> A comprehensive, intelligent database for regulatory compliance.
+                      </li>
+                      <li>
+                        <strong class="text-gray-800">Automated Zoning & Design Checks:</strong> Ensuring projects align with zoning laws and design standards seamlessly.
+                      </li>
+                    </ul>
+                  </div>
+        
+                  <div class="mb-6">
+                    <h4 class="font-semibold text-xl mb-3 text-gray-800">My Contributions:</h4>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                      <li>
+                        <strong>Unravel (Next.js):</strong> Developed a Next.js application serving as the frontend for the AI co-pilot, integrating both server-side and client-side rendering. Designed and implemented REST APIs to support various functionalities efficiently.
+                      </li>
+                      <li>
+                        <strong>3DBuildings (Python, Functions Framework):</strong> Built a Python-based service that fetches building coordinates and structures, converting them into DXF AutoCAD format using ezdxf, automating design workflows and reducing manual intervention.
+                      </li>
+                      <li>
+                        <strong>Python Backend (FastAPI, AI Integration):</strong> Engineered a FastAPI backend to interact with ChatGPT’s API, delivering real-time AI-powered responses. Integrated Retrieval Augmented Generation (RAG) for improved data retrieval, DXF file processing, and document filtering capabilities.
+                      </li>
+                      <li>
+                        <strong>Landing Page (Next.js):</strong> Developed an SEO-optimized landing page with server-side rendering (SSR) for better visibility. Designed an intuitive interface for users to directly retrieve DXF files and interact with AI-driven document analysis.
+                      </li>
+                    </ul>
+                    <p class="mt-4 text-gray-700">
+                      This project focused on enhancing efficiency, integrating AI, and building scalable, high-performance solutions. If you're looking for a developer who delivers robust and intelligent applications, let’s connect.
+                    </p>
+                  </div>
                 </div>
-      
-                <div class="mb-6">
-                  <h4 class="font-semibold text-xl mb-3 text-gray-800">My Contributions:</h4>
-                  <ul class="list-disc list-inside text-gray-700 space-y-2">
-                    <li class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <strong>Unravel (Next.js):</strong> Frontend for the AI co-pilot with SSR and API integrations
-                    </li>
-                    <li class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <strong>3DBuildings (Python):</strong> Auto-generates DXF files from building coordinates
-                    </li>
-                    <li class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <strong>Python Backend (FastAPI):</strong> RAG-enhanced backend with ChatGPT integration
-                    </li>
-                    <li class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <strong>Landing Page (Next.js):</strong> SEO-optimized, server-side rendered page
-                    </li>
-                  </ul>
-                </div>
-      
+        
                 <!-- Tech Stack -->
                 <div class="mb-8">
                   <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
@@ -670,10 +667,16 @@
                     <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">FastAPI</span>
                     <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">TailwindCSS</span>
                     <span class="tech-tag bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded-full">Shadcn</span>
-                    <span class="tech-tag bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full">MongoDB</span>
+                    <span class="tech-tag bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full">MongoDBSentry</span>
+                    <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">Aggregation</span>
+                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">LangChain</span>
+                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Kubernetes</span>
+                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Sentry</span>
+                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">ArcGIS</span>
+                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">3D BAG</span>
                   </div>
                 </div>
-      
+        
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
                   <a href="https://unravel.struck.build/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
@@ -693,6 +696,7 @@
             </div>
           </div>
         </section>
+        
       
         <!-- Walacor Project -->
         <section id="walacor" class="project-section py-16 px-4 md:px-8 bg-gray-50">
@@ -709,39 +713,35 @@
                   Walacor
                 </p>
               </div>
-      
+    
               <!-- Project Details -->
               <div class="md:w-1/2 w-full text-left">
                 <h3 class="text-3xl font-bold mb-4 text-gray-800">
                   Walacor - Blockchain Security Platform
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  Enterprise-grade distributed microservices architecture leveraging blockchain technology
-                  with quantum-resistant encryption algorithms for unmatched security.
+                  Walacor is a cutting-edge platform that leverages blockchain technology to unify best-in-class technologies within an enterprise-grade distributed microservices architecture. It ensures that data remains secure and accessible only to authorized entities, utilizing quantum-resistant encryption algorithms for unmatched security.
                 </p>
                 
                 <div class="mb-6">
-                  <h4 class="font-semibold text-xl mb-3 text-gray-800">Core Components:</h4>
+                  <h4 class="font-semibold text-xl mb-3 text-gray-800">Core Features and Services:</h4>
                   <ul class="list-disc list-inside text-gray-700 space-y-2">
-                    <li class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Platform API:</strong> Central access point using proprietary JSON Envelope format
+                    <li class=" text-start">
+                      <strong class="text-gray-800">Platform API:</strong> The central access point for all interactions with Walacor. This RESTful API communicates using a proprietary JSON format called an Envelope, ensuring seamless data exchange across the ecosystem.
                     </li>
-                    <li class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Off-Chain Manager:</strong> Records every Envelope on blockchain for immutability
+                    <li class=" items-start">
+                      <span><strong class="text-gray-800">Off-Chain Manager(OCM):</strong> A key component that records every Envelope on the blockchain, guaranteeing an immutable and verifiable data store for enhanced security and transparency.</span>
                     </li>
-                    <li class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Data Storage Manager:</strong> Bridges blockchain and cache for efficient data retrieval
+                    <li class=" items-start">
+                      <span><strong class="text-gray-800">Data Storage Manager:</strong> Serves as the bridge between blockchain and cache, enabling efficient data retrieval while maintaining security and compliance standards.</span>
                     </li>
-                    <li class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Business Process Manager:</strong> Automates workflows by executing business logic
+                    <li class=" items-start">
+                      <span><strong class="text-gray-800">Business Process Manager(BPM):</strong> Automates workflows by triggering predefined business logic whenever new Envelopes are added to the system, streamlining operations and ensuring seamless process execution.</span>
                     </li>
                   </ul>
+                  <p class="mt-2">Walacor's blockchain-powered infrastructure, quantum-resistant encryption, and automated business logic make it a game-changer for enterprises seeking unparalleled data security and efficiency.</p>
                 </div>
-      
+              
                 <!-- Tech Stack -->
                 <div class="mb-8">
                   <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
@@ -752,16 +752,31 @@
                     <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Multichain</span>
                     <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">Express.js</span>
                     <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">MongoDB</span>
-                    <span class="tech-tag bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded-full">AWS</span>
+                    <span class="tech-tag bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded-full">AWS AMI</span>
+                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Python3</span>
+                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Flask</span>
+                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">KMIP</span>
+                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">DevExtreme</span>
+                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">Scss</span>
+                    <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">Protocol</span>
+                    <span class="tech-tag bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded-full">Cryptography Key LifeCycle</span>
+                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Docker</span>
+                    <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">Private npm packages</span>
                   </div>
                 </div>
-      
+              
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
-                  <a href="https://aws.amazon.com/marketplace/pp/prodview-n6yuvr2g44wpo" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a href="https://aws.amazon.com/marketplace/pp/prodview-n6yuvr2g44wpo?sr=0-1&ref_=beagle&applicationId=AWSMPContessa" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
                     <span>AWS Marketplace</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <a href="https://aws.amazon.com/marketplace/pp/prodview-n6yuvr2g44wpo/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                    <span>AWS Marketplace</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
                 </div>
@@ -771,7 +786,7 @@
         </section>
       
         <!-- SampleServe Project -->
-        <section id="sampleserve" class="project-section py-16 px-4 md:px-8 ">
+        <section id="sampleserve" class="project-section py-16 px-4 md:px-8">
           <div class="max-w-6xl mx-auto">
             <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8 items-start">
               <!-- Project Image -->
@@ -785,15 +800,14 @@
                   SampleServe
                 </p>
               </div>
-      
+          
               <!-- Project Details -->
               <div class="md:w-1/2 w-full text-left">
                 <h3 class="text-3xl font-bold mb-4 text-gray-800">
                   SampleServe - Environmental Sampling Platform
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  Digital solution for environmental professionals that enhances efficiency, 
-                  accuracy, and compliance by eliminating manual errors and paperwork.
+                  SampleServe is an advanced environmental sampling and data management platform designed to streamline workflows for environmental professionals. By digitizing the sampling process, it enhances efficiency, accuracy, and compliance, eliminating manual errors and paperwork. With its intuitive mobile and web applications, SampleServe enables real-time data collection, seamless collaboration between field and lab teams, and automated reporting, ensuring faster and more reliable environmental testing.
                 </p>
                 
                 <div class="mb-6">
@@ -801,35 +815,42 @@
                   <ul class="list-disc list-inside text-gray-700 space-y-2">
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Digital Chain-of-Custody:</strong> Secure sample tracking from collection to analysis
+                      <span><strong class="text-gray-800">Digital Chain-of-Custody:</strong> Secure and transparent sample tracking from collection to analysis.</span>
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Automated Report Generation:</strong> Instantly compiles compliance-ready reports
+                      <span><strong class="text-gray-800">Automated Report Generation:</strong> Instantly compiles detailed, compliance-ready reports.</span>
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Real-Time Field Data:</strong> Mobile app for accurate on-site data entry
+                      <span><strong class="text-gray-800">Real-Time Field Data Collection:</strong> Mobile app integration for accurate on-site data entry.</span>
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Cloud-Based:</strong> Access and manage data anywhere
+                      <span><strong class="text-gray-800">Cloud-Based Accessibility:</strong> Enables teams to access and manage data anytime, anywhere.</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span><strong class="text-gray-800">Regulatory Compliance:</strong> Ensures adherence to environmental standards and protocols.</span>
                     </li>
                   </ul>
+                  <p class="mt-4">SampleServe has revolutionized environmental sampling by reducing paperwork, minimizing human error, and accelerating project turnaround times. It empowers field teams and laboratories with a modern, efficient, and user-friendly solution, driving greater accuracy and productivity in environmental testing.</p>
                 </div>
-      
+          
                 <!-- Tech Stack -->
                 <div class="mb-8">
                   <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
                   <div class="flex flex-wrap gap-3">
-                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">React</span>
-                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">React-native</span>
+                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">HTML</span>
+                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">CSS</span>
                     <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Typescript</span>
                     <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Redux</span>
                     <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">Auth0</span>
+                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">React</span>
+                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">React-native</span>
                   </div>
                 </div>
-      
+          
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
                   <a href="https://www.sampleserve.com/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
@@ -853,45 +874,50 @@
                 <img
                   src="./convoai.png"
                   alt="Convo.ai project screenshot"
-                  class="rounded-xl  w-full"
+                  class="rounded-xl w-full"
                 />
                 <p class="mt-4 text-center font-semibold text-xl text-gray-600">
                   Convo.ai
                 </p>
               </div>
-      
+        
               <!-- Project Details -->
               <div class="md:w-1/2 w-full text-left">
                 <h3 class="text-3xl font-bold mb-4 text-gray-800">
                   Convo.ai - AI Conversation Platform
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  AI-driven conversational platform that transforms customer interactions 
-                  through intelligent automation and natural language processing.
+                  Convo.ai is an advanced AI-driven conversational platform designed to transform customer interactions through intelligent automation. Built on the MERN stack (MongoDB, Express.js, React, Node.js), it seamlessly integrates with business tools, delivering personalized, real-time communication that enhances engagement and streamlines customer support.
+                  <br> Leveraging cutting-edge Natural Language Processing (NLP), Convo.ai understands and responds to user queries with accuracy, ensuring a smooth and efficient customer experience.
                 </p>
                 
                 <div class="mb-6">
-                  <h4 class="font-semibold text-xl mb-3 text-gray-800">Features:</h4>
+                  <h4 class="font-semibold text-xl mb-3 text-gray-800">Key Features:</h4>
                   <ul class="list-disc list-inside text-gray-700 space-y-2">
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <strong class="text-gray-800">AI Chatbot:</strong> Real-time intelligent customer interactions
+                      <span><strong class="text-gray-800">AI-Driven Chatbot:</strong> Automates real-time customer interactions with intelligent responses.</span>
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Scalable Backend:</strong> High-performance Node.js architecture
+                      <span><strong class="text-gray-800">Scalable Backend Architecture:</strong> Powered by Node.js and Express for high-performance request handling.</span>
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Dynamic Frontend:</strong> Intuitive React interface
+                      <span><strong class="text-gray-800">Dynamic Frontend:</strong> Built with React for a seamless, intuitive user experience.</span>
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      <strong class="text-gray-800">Seamless Integrations:</strong> CRM and business tool connections
+                      <span><strong class="text-gray-800">Efficient Data Management:</strong> Utilizes MongoDB for fast and reliable data storage and retrieval.</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span><strong class="text-gray-800">Seamless Integrations:</strong> Easily connects with third-party APIs, CRM systems, and business tools for enhanced functionality.</span>
                     </li>
                   </ul>
+                  <p class="mt-4">Convo.ai empowers businesses to enhance customer engagement, streamline support processes, and drive operational efficiency. By combining AI, automation, and a user-friendly interface, it delivers a smarter, faster, and more efficient way to manage conversations at scale.</p>
                 </div>
-      
+        
                 <!-- Tech Stack -->
                 <div class="mb-8">
                   <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
@@ -901,9 +927,11 @@
                     <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">React</span>
                     <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Typescript</span>
                     <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">MongoDB</span>
+                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Tailwind Css</span>
+                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Prompt</span>
                   </div>
                 </div>
-      
+        
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
                   <a href="https://getconvo.ai/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
@@ -940,8 +968,7 @@
                   Chapterly - Authoring Platform
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  Connects readers with storytellers globally with authoring tools including
-                  spelling/grammar checker, distraction-free mode, and goal tracking.
+                  Chapterly is an authoring app. It aims to connect readers with storytellers from across the globe. Chapterly's authoring tools matched with a growing global audience of readers unlocks author-friendly publishing opportunities storytellers deserve. Including spelling and grammar checker, distraction-free mode, goals and more.
                 </p>
       
                 <!-- Tech Stack -->
@@ -953,12 +980,16 @@
                     <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Next.js</span>
                     <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Firebase</span>
                     <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">StoryBook</span>
+                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Typescript</span>
+                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Styled Components</span>
+                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Sentry</span>
+                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Notion</span>
                   </div>
                 </div>
       
                 <!-- Links -->
                 <div class="flex flex-wrap gap-4">
-                  <a href="https://gomedii.com/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                  <a href="https://www.chapterly.com/" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
                     <span>Related Project</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -992,21 +1023,30 @@
                   GoMedii - Healthcare Platform
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  Comprehensive healthcare technology platform for in-patient care journey
-                  from hospital discovery to post-treatment care with multilingual support,
-                  video consultations, and travel assistance.
+                  GoMedii is a healthcare technology platform focused at In-Patient care that helps through the entire treatment journey from hospital/doctor discovery, treatment planning to pre-treatment & in-treatment at hospitals until the post treatment care.
+                  <br><br>
+                  GoMedii platform supports multilingual communication and offers features like online video consultations, pharmacy services, and travel assistance for medical purposes.
                 </p>
       
                 <!-- Tech Stack -->
                 <div class="mb-8">
                   <h4 class="font-semibold text-lg mb-3 text-gray-800">Tech Stack:</h4>
                   <div class="flex flex-wrap gap-3">
+                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">HTML</span>
+                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">JavaScript</span>
+                    <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">TypeScript</span>
+                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Pyhon</span>
+                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">MaterialUI</span>
+                    <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">SCSS</span>
                     <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">React.js</span>
                     <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">React-Native</span>
                     <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Next.js</span>
                     <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Node.js</span>
                     <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">MongoDB</span>
                     <span class="tech-tag bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">AWS</span>
+                    <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Docker</span>
+                    <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">Twilio</span>
+
                   </div>
                 </div>
       
@@ -1046,9 +1086,7 @@
                   Dimusco - Digital Sheet Music
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  Platform for musicians to access, annotate, and share sheet music across
-                  devices with real-time synchronization and cloud-based accessibility for
-                  orchestras, ensembles, and individual musicians.
+                  Dimusco is a digital sheet music platform designed to provide musicians with a seamless way to access, annotate, and share sheet music across devices. Built with a focus on usability and collaboration, it enables orchestras, ensembles, and individual musicians to manage their music libraries efficiently.The platform integrates real-time synchronization, advanced annotation tools, and cloud-based accessibility, making it a powerful solution for modern digital sheet music management.
                 </p>
       
                 <!-- Tech Stack -->
@@ -1060,6 +1098,8 @@
                     <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Redux</span>
                     <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">SCSS</span>
                     <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">REST API</span>
+                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">CSS</span>
+                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Bootstrap</span>
                   </div>
                 </div>
       
@@ -1099,29 +1139,27 @@
                   Fantasy Sports App
                 </h3>
                 <p class="text-gray-700 mb-6 leading-relaxed">
-                  Mobile application for sports events allowing users to create lineups
-                  and participate in fantasy leagues and contests with drafting and
-                  management features.
+                  A mobile application designed to serve the majority of sports events, allowing users to create lineups for participation. It introduces a new way to play fantasy sports—your one-stop destination to play, draft, manage, and compete in fantasy leagues and contests.
                 </p>
                 
                 <div class="mb-6">
-                  <h4 class="font-semibold text-xl mb-3 text-gray-800">My Contributions:</h4>
+                  <h4 class="font-semibold text-xl mb-3 text-gray-800">Project Responsibilities:</h4>
                   <ul class="list-disc list-inside text-gray-700 space-y-2">
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      Feature integration coordination with team
+                      Coordinated with the team to integrate features into the mobile app.
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      Ensuring industry standard compliance
+                      Ensured the application met industry standards.
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      Testing and debugging for optimal performance
+                      Tested and debugged the application to ensure optimal performance.
                     </li>
                     <li class="flex items-start">
                       <span class="mr-2">•</span>
-                      Application performance monitoring
+                      Monitored application performance.
                     </li>
                   </ul>
                 </div>
@@ -1135,6 +1173,8 @@
                     <span class="tech-tag bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">TypeScript</span>
                     <span class="tech-tag bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Python</span>
                     <span class="tech-tag bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full">AWS</span>
+                    <span class="tech-tag bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Android</span>
+                    <span class="tech-tag bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Firebase</span>
                   </div>
                 </div>
       
@@ -1155,7 +1195,7 @@
 </section>
     <!-- Testimonials -->
 
-    <section class="bg-gray-50 py-16 px-4">
+    <section class="bg-gray-50 py-16 px-4" id="testimonials">
       <div class="max-w-6xl mx-auto text-center">
         <!-- Heading -->
         <div
@@ -1234,7 +1274,7 @@
       </div>
     </section>
 
-    <footer class="bg-gray-50 py-16 px-4 text-center">
+    <footer class="bg-gray-50 py-16 px-4 text-center" id="contact">
       <!-- Call to action -->
       <div
         class="inline-block bg-gray-200 text-gray-800 text-lg font-medium px-6 py-2 rounded-full mb-6"
